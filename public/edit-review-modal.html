@@ -1,0 +1,31 @@
+<div class="modal fade" id="editCommentModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-center">
+                <h3 class="modal-title text-dark">Edit a Review</h3>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+            <div class="modal-body px-5">
+                <form id="commentForm">
+                    <div class="row" text-center id="editcommentBody">
+                        <label for="editusername">Username</label>
+                        <textarea id="editusername" required class="form-control form-rounded" rows="1" cols="100%"></textarea>
+                        <label for="editcustomercomments">Comments</label>
+                        <textarea id="editcustomercomments" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                        <label for="popcorn">Review</label>
+                        <img src="images/ricebowlBW.png" class="editpop" value="1" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="editpop" value="2" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="editpop" value="3" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="editpop" value="4" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="editpop" value="5" onmouseover="rateIt(this)" />
+                    </div>
+
+                    <div class="modal-footer">
+  <button type="button" class="btn btn-warning" data-dismiss="modal" id="submitComment" onClick="updateReview()">Update</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

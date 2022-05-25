@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shiok Restaurant Review</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/ricebowl_map.png">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script>
+        var member_profile_picture, member_email, member_address, member_postal_code, member_phone_number;
+        var token = sessionStorage.getItem("token");
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.levistrauss.com/wp-content/uploads/2020/05/Black_Box.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div w3-include-html="edit-navigation.html"></div>
+    <!-- This is the container that holds the initial message, heading, and movies -->
+    <div class="container">
+        <div class="row mt-5" style="color: white;" id="parent">
+            <div class="form-group"><h3>Update Personal Information</h3>Avatar not suiting your style? Address out of date? Update your personal information<b style="color:#ffb300"> with ease.</b> Because with <b style="color:#ffb300"> Shiok Restaurant Review</b>, you can.<br><br>
+                <label for="member_email">Email Address</label>
+                <input type="text" class="form-control" id="member_email">
+                <label for="member_address">Residential Address</label>
+                <input type="text" class="form-control" id="member_address">
+                <label for="member_postal_code">Postal Code</label>
+                <input type="text" class="form-control" id="member_postal_code">
+                <label for="member_phone_number">Local Mobile Number</label>
+                <input type="text" class="form-control" id="member_phone_number">
+                <label for="member_password">Password</label>
+                <input type="text" class="form-control" id="member_password">
+
+                <label for="myinput" class="mt-5">Avatar</label>
+                <input id="myinput" type="file" onchange="encode();" />
+                <button onclick="update();" type="button" class="btn btn-warning">Update Account</button>
+                <button href="index.html" onclick="deleteMe()" type="button" class="btn btn-danger">Delete Account</button>
+            </div>
+        </div>
+        <div>
+            <img style="width:100px" id="target" />
+        </div>
+    </div>
+    <div w3-include-html="success-modal.html"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div w3-include-html="footer.html"></div>
+</body>
+<script src="js/w3.js"></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/redirect.js"></script>
+<script src="js/loadProfile.js"></script>
+<script src="js/updateProfile.js"></script>
+<script src="js/delete.js"></script>
+<script src="js/logout.js"></script>
+
+</html>

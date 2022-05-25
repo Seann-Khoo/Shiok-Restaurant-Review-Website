@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shiok Restaurant Review</title>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/ricebowl_map.png">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://www.levistrauss.com/wp-content/uploads/2020/05/Black_Box.png');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div w3-include-html="mail-navigation.html"></div>
+    <!-- This is the container that holds the initial message, heading, and movies -->
+    <div class="container">
+        <!-- The message will be shown when the page loads and will
+        disappear after the movies are loaded -->
+        <div class="row" id="parent">
+            <form class="col-12" style="color: white;">
+                <br>
+                <div class="form-group"><h3>Contact Shiok Restaurant Review</h3>Go ahead.<b style="color:#ffb300"> Tell us everything.</b> Give us Feedback. Vent your frustrations. Recommend a restaurant. <b style="color:#ffb300"> We want to hear everything.</b> Everything. And we will get back to you within <b style="color:#ffb300"> 2 working days.</b><br><br>
+                  <label for="email">Preferred Reply Email Address</label>
+                  <input type="email" class="form-control" id="email" placeholder="james@email.com">
+                </div>
+                <div class="form-group">
+                  <label for="feedback">Feedback</label>
+                  <textarea class="form-control" id="feedback"></textarea>
+                </div>
+                <button type="button" class="btn btn-warning" onclick="sendEmail()">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <div w3-include-html="review-modal.html"></div>
+    <div w3-include-html="restaurants-modal.html"></div>
+    <div w3-include-html="message-modal.html"></div>
+    <div w3-include-html="login-modal.html"></div>
+    <div w3-include-html="register-modal.html"></div>
+    <div w3-include-html="success-modal.html"></div>
+    <div w3-include-html="fail-modal.html"></div>
+    <div w3-include-html="new-review-modal.html"></div>
+    <div w3-include-html="edit-review-modal.html"></div>
+    <div w3-include-html="map-modal.html"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div w3-include-html="footer.html"></div>
+</body>
+<script src="js/w3.js"></script>
+<script>
+    //to bring in other HTML on the fly into this page
+    w3.includeHTML();
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="js/email.js"></script>
+
+
+</html>

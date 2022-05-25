@@ -1,0 +1,34 @@
+<div class="modal fade" id="newCommentModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-warning text-center">
+                <h3 class="modal-title text-dark">Add a New Review</h3>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+            </div>
+            <div class="modal-body px-5">
+                <!-- All input to be sent to server, and buttons must be within the 'form' tag -->
+                <form id="commentForm">
+                    <div class="row" text-center id="commentBody">
+                        <label for="memberId">User ID</label>
+                        <textarea id="memberId" required class="form-control form-rounded" rows="1" cols="100%"></textarea>
+                        <label for="customer_username">Username</label>
+                        <textarea id="customer_username" required class="form-control form-rounded" rows="1" cols="100%"></textarea>
+                        <label for="customer_comments">Comments</label>
+                        <textarea id="customer_comments" required class="form-control form-rounded" rows="3" cols="100%"></textarea>
+                        <label for="popcorn">Rating</label>
+                        <img src="images/ricebowlBW.png" class="pop" value="1" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="pop" value="2" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="pop" value="3" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="pop" value="4" onmouseover="rateIt(this)" />
+                        <img src="images/ricebowlBW.png" class="pop" value="5" onmouseover="rateIt(this)" />
+                    </div>
+
+                    <div class="modal-footer">
+  <button type="button" class="btn btn-warning" data-dismiss="modal" id="submitComment" onClick="addReview()">Submit</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
