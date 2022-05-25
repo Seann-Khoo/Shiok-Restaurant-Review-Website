@@ -98,10 +98,10 @@ class RestaurantsDB {
     sendEmail(request, respond) {
         var email = request.body.email;
         var feedback = request.body.feedback;
-        sgMail.setApiKey("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")
+        sgMail.setApiKey("Insert API Key")
         const msg = {
             to: email, // Change to your recipient
-            from: 'seannkhoo@gmail.com', // Change to your verified sender
+            from: 'Insert Email Address', // Change to your verified sender
             subject: 'Shiok Restaurant Review Feedback',
             text: "Thanks for your feedback! It means a lot to Shiok Restaurant Review. An email receipt of your feedback response is attached below." + '<br>' +  '<br>' + '<strong>' + feedback + '</strong>',
             html: "Thanks for your feedback! It means a lot to Shiok Restaurant Review. An email receipt of your feedback response is attached below." + '<br>' +  '<br>' + '<strong>' + feedback + '</strong>',
