@@ -20,5 +20,7 @@
   
  <h5>Primary Font:<br>
   <ul><li>Arial</li></ul></h5>
+  
+ <h5>Link to Video Demonstration: <a href=https://youtu.be/njuRLocVmNE>https://youtu.be/njuRLocVmNE</a></h5>
 
 <h6>© 2021, Seann Khoo</h6>
