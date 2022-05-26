@@ -27,6 +27,6 @@ convenient online mobile sharing platform with only 3 basic features – Post, L
   <li>White (#FFFFFF)</li></ul></h5>
   
  <h5>Primary Font:<br>
-  <ul><li></li></ul></h5>
+  <ul><li>Arial</li></ul></h5>
 
 <h6>© 2021, Seann Khoo</h6>
